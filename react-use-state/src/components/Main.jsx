@@ -11,7 +11,7 @@ export default function Main() {
             <div>
                 <MainButton
                     selected={selected}
-                    onSelected={setSelected}
+                    onSelect={setSelected}
                 />
             </div>
             <div>
