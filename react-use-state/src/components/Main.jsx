@@ -1,7 +1,6 @@
 import MainButton from "./MainButton";
 import Description from "./Description";
 import languages from "../languages.js";
-import ButtonClick from "./ButtonClick";
 
 export default function Main() {
     return (
@@ -10,7 +9,6 @@ export default function Main() {
                 {languages.map((item) => (
                     <MainButton
                         title={item.title}
-                        onClick={ButtonClick(item.id, item.item)}
                     />
                 ))}
             </div>
