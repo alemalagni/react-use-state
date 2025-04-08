@@ -8,7 +8,7 @@ export default function Main() {
 
     return (
         <main>
-            <div className="d-flex gap-2 justify-content-center pt-3">
+            <div>
                 <MainButton
                     selected={selected}
                     onSelected={setSelected}
