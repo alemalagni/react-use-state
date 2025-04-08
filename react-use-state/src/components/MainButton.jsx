@@ -1,7 +1,7 @@
-export default function MainButton({ title }) {
+export default function MainButton({ id, title }) {
     return (
         <div>
-            <button type="button" className="btn btn-primary">{title}</button>
+            <button id={id} type="button" className="btn btn-primary">{title}</button>
         </div>
     );
 }
