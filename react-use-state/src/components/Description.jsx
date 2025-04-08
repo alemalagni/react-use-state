@@ -1,8 +1,9 @@
 import languages from "../languages";
 
 export default function Description({ selected }) {
-    const title = languages[selected].title;
-    const description = languages[selected].description;
+    const index = parseInt(selected) - 1;
+    const title = languages[index].title;
+    const description = languages[index].description;
 
     return (
         <div className="border mt-4 ms-3 me-3 rounded-2 p-1">
