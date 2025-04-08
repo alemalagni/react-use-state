@@ -1,5 +1,5 @@
 import MainButton from "./MainButton";
-//import Description from "./Description";
+import Description from "./Description";
 import languages from "../languages.js";
 
 export default function Main() {
@@ -12,9 +12,11 @@ export default function Main() {
                     />
                 ))}
             </div>
-            {/* <div>
-                <Description />
-            </div> */}
+            <div>
+                <Description
+                    text={"prova"}
+                />
+            </div>
         </main>
     );
 }
