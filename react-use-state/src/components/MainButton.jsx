@@ -1,9 +1,17 @@
-//import { useState } from react;
+import languages from "../languages";
 
-export default function MainButton({ id, title }) {
+export default function MainButton({ selected, onSelect }) {
     return (
         <div>
-            <button id={id} type="button" className="btn btn-primary">{title}</button>
+            {languages.map((item) => (
+                <button type="button"
+                    onClick={() => onSelect(item)}
+                    className={selected === item ? "btn btn-warning" : "btn btn-primary"}
+                >
+                    {item.title}
+                </button>
+            ))}
+
         </div>
     );
 }
