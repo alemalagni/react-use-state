@@ -1,9 +1,14 @@
-import MainButton from "./components/MainButton";
+import MainButton from "./MainButton";
+import languages from "../languages.js";
 
 export default function Main() {
     return (
         <main>
-            <MainButton />
+            {languages.map((item) => (
+                <MainButton
+                    title={item.title}
+                />
+            ))}
         </main>
     );
 }
