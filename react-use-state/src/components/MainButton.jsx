@@ -5,8 +5,9 @@ export default function MainButton({ selected, onSelect }) {
         <div>
             {languages.map((item) => (
                 <button type="button"
-                    onClick={() => onSelect(item)}
-                    className={selected === item ? "btn btn-warning" : "btn btn-primary"}
+                    key={item.id}
+                    onClick={() => onSelect(item.id)}
+                    className={selected === item.id ? "btn btn-warning" : "btn btn-primary"}
                 >
                     {item.title}
                 </button>
