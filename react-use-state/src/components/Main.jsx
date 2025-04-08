@@ -4,7 +4,7 @@ import Description from "./Description";
 import languages from "../languages.js";
 
 export default function Main() {
-    const [selected, setSelected] = useState(0);
+    const [selected, setSelected] = useState(1);
 
     return (
         <main>
