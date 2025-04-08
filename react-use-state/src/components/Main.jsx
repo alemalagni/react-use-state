@@ -16,7 +16,7 @@ export default function Main() {
             </div>
             <div>
                 <Description
-                    text={"prova"}
+                    selected={selected}
                 />
             </div>
         </main>
