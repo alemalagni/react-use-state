@@ -2,7 +2,7 @@ import languages from "../languages";
 
 export default function MainButton({ selected, onSelect }) {
     return (
-        <div>
+        <div className="d-flex gap-2 justify-content-center pt-3">
             {languages.map((item) => (
                 <button type="button"
                     key={item.id}
