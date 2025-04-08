@@ -1,7 +1,7 @@
 export default function MainButton({ title }) {
     return (
         <div>
-            <button>{title}</button>
+            <button type="button" className="btn btn-primary">{title}</button>
         </div>
     );
 }
